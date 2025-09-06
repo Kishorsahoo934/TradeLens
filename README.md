@@ -48,3 +48,14 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
+
+
+## 🧑‍💻 Contributing  
+Contributions are welcome! 🎉  
+
+1. Fork the project  
+2. Create a new branch (`feature-xyz`)  
+3. Commit your changes  
+4. Push to your branch  
+5. Open a Pull Request  
+
