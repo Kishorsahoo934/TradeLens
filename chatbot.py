@@ -12,13 +12,15 @@ import yfinance as yf
 import ccxt
 
 # ---------------- Setup ----------------
-load_dotenv()
+#load_dotenv()
+API_KEY = "AIzaSyBz80LVIZEwFDppx8s0Ii8AEJ3CQYTEfsc"
 conn = sqlite3.connect("chatbot.sqlite3", check_same_thread=False)
 memory = SqliteSaver(conn)
 
 llm = ChatGoogleGenerativeAI(
     model="models/gemini-1.5-flash",
-    temperature=0.1
+    temperature=0.1,
+    api_key=API_KEY
 )
 
 class ChatState(TypedDict):
